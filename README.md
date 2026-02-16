@@ -147,7 +147,7 @@ http://localhost:3000
 This application is deployed using Vercel for fast, secure, and scalable hosting.
 
 Live URL:  
-https://visual-product-matcher-k7r7-8qv588tbi.vercel.app
+https://visual-product-matcher-k7r7.vercel.app
 
 Deployment platform automatically builds and deploys the application from GitHub.
 
