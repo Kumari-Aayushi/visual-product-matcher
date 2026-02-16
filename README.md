@@ -1,70 +1,189 @@
-# Getting Started with Create React App
+# Visual Product Matcher — AI Powered Visual Search Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Demo: https://visual-product-matcher-k7r7-8qv588tbi.vercel.app  
+GitHub Repository: https://github.com/Kumari-Aayushi/visual-product-matcher  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+Visual Product Matcher is an AI-powered visual similarity search platform that allows users to upload an image and instantly discover visually similar products using deep learning.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The system leverages TensorFlow.js and the MobileNet pretrained neural network to extract high-dimensional feature embeddings from images and compares them using cosine similarity to find the closest visual matches.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project demonstrates practical implementation of computer vision, deep learning, and modern frontend engineering in a real-world e-commerce use case.
 
-### `npm test`
+The entire application runs fully in the browser, making it fast, scalable, and deployment-friendly without requiring backend infrastructure.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Key Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+• AI-powered visual similarity search using MobileNet  
+• Upload images directly from device  
+• Search using image URLs  
+• Category-aware filtering for improved accuracy  
+• Real-time similarity scoring with confidence levels  
+• Optimized performance using embedding caching  
+• Modern, responsive, production-quality UI  
+• Skeleton loaders for smooth user experience  
+• Dark mode support  
+• Fully client-side architecture  
+• Fast deployment using Vercel  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How It Works
 
-### `npm run eject`
+1. The user uploads an image or provides an image URL
+2. The MobileNet neural network extracts feature embeddings
+3. Embeddings are compared against stored product embeddings
+4. Cosine similarity algorithm calculates similarity score
+5. Most similar products are ranked and displayed
+6. Results include similarity confidence score and category filtering
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This approach replicates how real-world visual search engines such as Amazon, Flipkart, and Google Lens operate.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technology Stack
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Frontend  
+• React.js  
+• JavaScript (ES6+)  
+• HTML5  
+• CSS3  
 
-## Learn More
+Artificial Intelligence / Machine Learning  
+• TensorFlow.js  
+• MobileNet pretrained convolutional neural network  
+• Cosine similarity algorithm  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Deployment  
+• Vercel (Cloud deployment platform)  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Version Control  
+• Git  
+• GitHub  
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Project Architecture
 
-### Analyzing the Bundle Size
+visual-product-matcher/
+│
+├── public/
+│ ├── index.html
+│ ├── favicon.ico
+│
+├── src/
+│ ├── components/
+│ │ └── ProductCard.js
+│ │
+│ ├── products.js
+│ ├── App.js
+│ ├── App.css
+│ └── index.js
+│
+├── package.json
+├── package-lock.json
+└── README.md
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Performance Optimization
 
-### Advanced Configuration
+To ensure fast performance, product embeddings are cached using browser localStorage.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This prevents recomputation of embeddings and significantly improves search speed and user experience.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Real-World Applications
 
-### `npm run build` fails to minify
+This technology can be used in:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+• E-commerce visual search engines  
+• Fashion recommendation systems  
+• Product identification tools  
+• Retail automation platforms  
+• AI-based recommendation engines  
+
+---
+
+## Installation and Setup (Local Development)
+
+Step 1: Clone repository
+
+git clone https://github.com/Kumari-Aayushi/visual-product-matcher.git
+
+
+Step 2: Navigate into project
+
+cd visual-product-matcher
+
+
+Step 3: Install dependencies
+
+npm install
+
+
+Step 4: Run application
+
+npm start
+
+
+Application will run at:
+
+http://localhost:3000
+
+
+---
+
+## Deployment
+
+This application is deployed using Vercel for fast, secure, and scalable hosting.
+
+Live URL:  
+https://visual-product-matcher-k7r7-8qv588tbi.vercel.app
+
+Deployment platform automatically builds and deploys the application from GitHub.
+
+---
+
+## Learning Outcomes
+
+This project demonstrates practical knowledge of:
+
+• Deep learning integration in frontend applications  
+• Computer vision using pretrained neural networks  
+• Feature extraction and similarity matching  
+• Modern React.js development  
+• Real-world AI product implementation  
+• Cloud deployment using Vercel  
+
+---
+
+## Author
+
+Aayushi Kumari  
+B.Tech Computer Science and Engineering  
+Birla Institute of Technology, Mesra  
+
+GitHub:  
+https://github.com/Kumari-Aayushi  
+
+---
+
+## Conclusion
+
+Visual Product Matcher demonstrates how artificial intelligence can be integrated into modern web applications to build intelligent, scalable, and real-world usable systems.
+
+This project reflects strong understanding of AI integration, frontend engineering, and deployment workflows.
+
+---
+
+## License
+
+This project is created for educational and demonstration purposes.
